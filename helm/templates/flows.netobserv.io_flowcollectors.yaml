@@ -4,7 +4,7 @@ metadata:
   annotations:
     controller-gen.kubebuilder.io/version: v0.16.2
   creationTimestamp: null
-  name: {{ .Release.Name }}-flowcollectors.flows.netobserv.io
+  name: flowcollectors.flows.netobserv.io
 spec:
   conversion:
     strategy: Webhook

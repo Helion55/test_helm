@@ -3,7 +3,7 @@
 apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
-  name: {{ .Release.Name }}-serving-cert
+  name: serving-cert
 spec:
   secretName: webhook-server-cert
   dnsNames:
@@ -21,7 +21,7 @@ spec:
 apiVersion: cert-manager.io/v1
 kind: Issuer
 metadata:
-  name: {{ .Release.Name }}-self-signed
+  name: self-signed
 spec:
   selfSigned: {}
 {{ end }}
@@ -29,7 +29,7 @@ spec:
 apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
-  name: {{ .Release.Name }}-metrics-serving-cert
+  name: metrics-serving-cert
 spec:
   secretName: manager-metrics-tls
   dnsNames:

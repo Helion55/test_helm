@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ .Release.Name }}-netobserv-controller-manager
+  name: netobserv-controller-manager
   labels:
     app: netobserv-operator
     control-plane: controller-manager
@@ -82,7 +82,7 @@ spec:
               readOnly: true
       securityContext:
         runAsNonRoot: true
-      serviceAccountName: {{ .Release.Name }}-netobserv-controller-manager
+      serviceAccountName: netobserv-controller-manager
       terminationGracePeriodSeconds: 10
       volumes:
         - name: cert

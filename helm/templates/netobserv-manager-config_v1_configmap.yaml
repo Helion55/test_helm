@@ -16,4 +16,4 @@ kind: ConfigMap
 metadata:
   labels:
     app: netobserv-operator
-  name: {{ .Release.Name }}-netobserv-manager-config
+  name: netobserv-manager-config

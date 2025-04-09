@@ -1,7 +1,7 @@
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
-  name: {{ .Release.Name }}-netobserv-manager-role
+  name: netobserv-manager-role
 rules:
   - apiGroups:
       - ""

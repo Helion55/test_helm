@@ -5,7 +5,7 @@ metadata:
   labels:
     app: netobserv-operator
     control-plane: controller-manager
-  name: {{ .Release.Name }}-netobserv-metrics-service
+  name: netobserv-metrics-service
 spec:
   ports:
     - name: https
