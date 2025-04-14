@@ -5,3 +5,6 @@ certManager:
     name: ""
 standaloneConsole:
   enable: false
+
+cert-manager:
+  enabled: true
