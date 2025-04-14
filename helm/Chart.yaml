@@ -64,3 +64,10 @@ annotations:
       url: https://netobserv.io/static/assets/images/about/topology-main.png
     - title: Flow details
       url: https://netobserv.io/static/assets/images/about/network-traffic-main.png
+
+
+dependencies:
+- name: cert-manager
+  version: "1.17.1"
+  repository: https://charts.jetstack.io
+  condition: cert-manager.enabled
