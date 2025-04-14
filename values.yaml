@@ -1,0 +1,10 @@
+certManager:
+  # if existingIssuer.name is not provided, a new self-signed Issuer will be created
+  existingIssuer:
+    kind: ClusterIssuer
+    name: ""
+standaloneConsole:
+  enable: false
+
+cert-manager:
+  enabled: true

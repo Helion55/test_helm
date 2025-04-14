@@ -1,0 +1,4 @@
+cert-manager: #defined by either the name or alias of your dependency in Chart.yaml
+  namespace: cert-manager
+  cert-manager:
+    enabled: true
